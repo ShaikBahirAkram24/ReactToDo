@@ -1,0 +1,161 @@
+/* index.css */
+
+/* Color Palette */
+:root {
+  --primary-color: #ff6f61; /* Coral */
+  --primary-light: #ff9a8b; /* Light Coral */
+  --primary-dark: #bf5b4a; /* Dark Coral */
+  --secondary-color: #4db6ac; /* Teal */
+  --secondary-light: #80cbc4; /* Light Teal */
+  --secondary-dark: #00796b; /* Dark Teal */
+  --danger-color: #e57373; /* Light Red */
+  --danger-light: #ffcdd2; /* Very Light Red */
+  --text-primary: #212121; /* Dark Gray */
+  --text-secondary: #757575; /* Medium Gray */
+  --background-light: #e0f7fa; /* Light Cyan */
+  --background-dark: #ffffff; /* White */
+  --border-color: #b0bec5; /* Light Blue Gray */
+}
+
+/* General Styles */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background-light);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#root {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* App Container */
+div {
+  background-color: var(--background-dark);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Heading Styles */
+h1 {
+  font-size: 2em;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: var(--text-secondary);
+  margin-top: 30px;
+}
+
+/* Input Field */
+input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  font-size: 1em;
+  border: 2px solid var(--border-color);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+/* Button */
+button {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-left: 10px;
+}
+
+button:hover {
+  background-color: var(--secondary-dark);
+}
+
+/* Todo List */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  background-color: var(--background-light);
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  text-align: left;
+  border-left: 5px solid var(--primary-color);
+  transition: background-color 0.3s ease;
+}
+
+li:hover {
+  background-color: var(--primary-light);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+
+  li {
+    font-size: 1em;
+    padding: 10px;
+  }
+}
+
+.end-card {
+  background-color: #f0f0f0; /* Light grey background */
+  padding: 20px; /* Add some padding */
+  text-align: center; /* Center the text */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  max-width: 400px; /* Limit the width */
+  margin: 20px auto; /* Center horizontally with margin */
+}
+
+.end-card-title {
+  font-size: 1.5em; /* Larger font size */
+  color: #333; /* Darker text color */
+  margin-bottom: 10px; /* Space between title and author */
+}
+
+.end-card-author {
+  font-size: 1.2em; /* Slightly smaller font */
+  color: #666; /* Lighter text color */
+}
